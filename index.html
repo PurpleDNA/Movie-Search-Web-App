@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Maroof's Movie app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/Style/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/Style/utility.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0474a58e58.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header__logo">Maroof's Movie App</div>
+        <div class="header__actions">
+          <form
+            action=""
+            id="header_form"
+            onsubmit="search(event)"
+            class="form"
+          >
+            <input
+              type="search"
+              class="header_form-input"
+              placeholder="Press Enter to search"
+            />
+            <div class="fuzzy_div">
+              <ul class="fuzzy_list"></ul>
+            </div>
+          </form>
+          <div class="lets_get_it">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          </div>
+          <img id="img_icon" src="" alt="" />
+        </div>
+      </header>
+      <main id="main">
+        <section>
+          <article class="movie">
+            <div class="movie_img">
+              <img id="img_src" src="" alt="" srcset="" />
+            </div>
+            <div class="movie_info">
+              <h1 class="movie_title"></h1>
+              <div class="movie_desc"></div>
+              <div class="movie_details">
+                <h3>Details</h3>
+                <ul class="flex">
+                  <li>Premiered: <span id="movie_date"></span></li>
+                  <li>Rating: <span id="movie_rating"></span></li>
+                  <li>Seasons: <span id="movie_seasons"></span></li>
+                  <li>Runtime: <span id="movie_runtime"></span></li>
+                  <li>Status: <span id="movie_status"></span></li>
+                </ul>
+              </div>
+              <a href="" class="btn" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-play"></i>
+                <span>Watch Movie</span>
+              </a>
+            </div>
+          </article>
+          <div class="episodes_list">
+            <h3 class="episodes_title">Episodes</h3>
+            <ol class="episodes" id="episodes"></ol>
+          </div>
+        </section>
+        <div class="loader"></div>
+        <div class="error-msg">
+          <p>
+            Sorry, It seems we can't find that one 😢 <br />
+            Try another? 👀
+          </p>
+        </div>
+      </main>
+    </div>
+
+    <script src="./Script/main.js"></script>
+  </body>
+</html>

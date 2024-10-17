@@ -1,0 +1,49 @@
+@media (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
+  .episodes li a img {
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 600px){
+  .header_form-input , .fuzzy_div{
+    width: 65vw;
+  }
+  .error-msg{
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+
+  .movie {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .movie_img {
+    max-width: 100%;
+  }
+  #img_src {
+    min-width: 220px;
+    height: 350px;
+  }
+  .movie_info {
+    width: 100%;
+  }
+  .movie_title {
+    text-align: center;
+  }
+  .flex {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 420px) {
+  .header_form-input , .fuzzy_div{
+    width: 62vw;
+  }
+
+}
